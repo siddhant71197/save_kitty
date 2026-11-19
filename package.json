@@ -1,0 +1,22 @@
+{
+  "name": "save-kitty",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Save Kitty: a Star-Battle-style kitten placement puzzle with Japanese UI.",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "check": "tsc --noEmit",
+    "gen:levels": "node --experimental-strip-types tools/gen-levels.ts",
+    "test:core": "node --experimental-strip-types tools/test-core.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
